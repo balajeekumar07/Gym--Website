@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Moon+Dance&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Righteous", serif; */
+
+}
+
+:root {
+    --first-col: #ffffff;
+    --second-col: #cccccc;
+    --third-col: #dc143c;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    background: url('images/body1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 10%;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+header nav .logo {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 {
+    font-size: 40px;
+}
+
+.logo h1 span {
+    font-size: 40px;
+    color: red;
+}
+
+header nav .logo img {
+    width: 100%;
+}
+
+#menu-icon {
+    font-size: 1.6rem;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: inline-flex;
+   
+}
+
+.nav-list li a {
+    color: white;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.join-btn {
+    color: white;
+    padding: 8px 15px;
+    font-weight: 600;
+    background: rgb(161, 28, 28);
+    border-radius: 3px;
+    border: 1px solid rgb(161, 28, 28);
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    transition: ease-in-out 0.5s;
+    background: transparent;
+    border: 1px solid rgb(161, 28, 28);
+}
+
+.nav-list li a:hover {
+    color: rgb(161, 28, 28);
+}
+
+/* ==========================Hero Section========================== */
+
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.hero .cont-wrapper {
+    position: absolute;
+    top: 25px;
+    left: 9%;
+    width: 100%;
+    font-family: "Righteous", serif;
+}
+
+.hero .cont-wrapper h1 {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 20px;
+
+}
+
+.hero .cont-wrapper h1 span {
+    font-size: 50px;
+    color: white;
+}
+
+.hero .cont-wrapper h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero .cont-wrapper p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero .cont-wrapper button {
+    font-size: 1rem;
+    margin-top: 30px;
+    padding: 10px 30px;
+}
+
+/* ==================choose us==================== */
+
+.choose-us {
+    width: 100vw;
+    background: black;
+    padding: 50px 0;
+}
+
+.choose-us .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    /* background: black; */
+}
+
+.choose-us .container .heading {
+    text-align: center;
+    width: 100%;
+}
+
+.choose-us .container .heading h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.choose-us .container .heading h1 span{
+    color: red;
+}
+.choose-us .container .heading p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 72);
+}
+
+.choose-us .row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.choose-us .row .col {
+    width: 260px;
+    padding: 40px 25px;
+    text-align: center;
+    background: #181818;
+    border: 1px solid transparent;
+   
+}
+
+.choose-us .row .col img {
+    width: 60px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    border: 2px dashed red;
+}
+
+.choose-us .row .col h3 {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.choose-us .row .col p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.choose-us .row .col:hover {
+    border: 1px solid red;
+}
+
+
+/* ================offer section==================== */
+
+.offer {
+    width: 100vw;
+    background: url(images/body.jpg);
+    padding: 80px 0;
+    background-position: 55% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.9) 0px 30px 60px -52px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px 98px inset;
+
+}
+
+.offer .container {
+    width: 80vw;
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offer .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.offer .container p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.book-btn{
+    padding: 10px 20px;
+}
+/* ==================services===================== */
+.services {
+    background: #181818;
+}
+
+.services .service-col {
+    width: 350px;
+}
+
+.services .service-col img {
+    width: 100%;
+    height: 55%;
+    margin-bottom: 30px;
+}
+
+.heading h1{
+    color: red;
+}
+
+.services .services-row {
+    text-align: left;
+    gap: 40px;
+}
+
+.services .services-row .service-col h3{
+    color: red;
+    text-transform: uppercase;
+}
+
+.services .services-row .service-col p {
+    font-size: 0.5ren;
+    margin: 20px 0;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.services .services-row .service-col a {
+    font-size: 1ren;
+    padding: 6px 20px;
+    border: 1px solid red;
+    color: #ccc;
+}
+
+/* =======================Contact Info======================== */
+.contact-info {
+    width: 100vw;
+    padding: 30px 0;
+    background:url(images/banner.jpg);
+    background-position: center;
+    box-shadow: rgba(50, 50, 93, 0.9) 0px 30px 60px -52px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px 98px inset;
+
+}
+
+.contact-info .container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-row .contact-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-row .contact-col i {
+    color: white;
+    background: red;
+    border-radius: 100%;
+    padding: 12px 12px;
+}
+
+
+.contact-row .contact-col p {
+    color: #ccc;
+
+}
+
+/* ===========================Footer=========================== */
+.footer {
+    width: 100vw;
+    background: #3e2d2d;
+    padding: 20px;
+}
+
+.footer .container {
+    width: 90vw;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.footer .container .row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer .container .row .footer-link {
+    width: 260px;
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+.footer .container .row .footer-link div {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition:1.2s;
+    cursor: pointer;
+}
+.footer .container .row .footer-link div:hover{
+    color: rgb(106, 0, 255);
+}
+
+.footer .container .row .footer-link li {
+    margin: 14px 0;
+}
+
+.footer .container .row .footer-link li a {
+    color: #ccc;
+    font-size: 0.9rem;
+    transition:1.5s;
+}
+
+.footer .container .row .footer-link li a:hover {
+    color: red;
+}
+
+.footer .container .row .footer-link .social-links {
+    margin-top: 40px;
+}
+
+.footer .container .row .footer-link .social-links a {
+    color: #ccc;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    padding: 10px 0;
+    text-align: center;
+    background: #3e2d2d;
+
+}
+
+.copyright p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+
+/* ==================Media Queries Section======================= */
+@media screen and (max-width:1100px) {
+    .nav-list li a {
+        margin: 0 12px;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+
+    header {
+        padding: 0 40px;
+    }
+
+    header nav .logo {
+        width: 45px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo h1 span {
+        font-size: 36px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 60px;
+        background: rgb(161, 28, 28);
+        right: 0;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 14px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-list li {
+        margin: 12px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hero .cont-wrapper h1 {
+        font-size: 40px;
+        color: red;
+        margin-bottom: 20px;
+    }
+    
+    .hero .cont-wrapper h1 span {
+        font-size: 45px;
+        color: white;
+    }
+    
+    .hero .cont-wrapper h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .hero .cont-wrapper p {
+        width: 90%;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
